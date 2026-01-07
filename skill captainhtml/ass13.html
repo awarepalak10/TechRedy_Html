@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibility in HTML – Practice Playground</title>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+        color: #fff;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ffcc70;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 20px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+
+    input, button, select, textarea {
+        margin-top: 8px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 8px;
+        border: none;
+    }
+
+    button {
+        background: #ffcc70;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #ffb84d;
+    }
+
+    .demo-box {
+        background: #33334d;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Accessibility in HTML</h1>
+
+<div class="card">
+    <h2>Accessible Image Example</h2>
+    <div class="demo-box">
+        <img src="https://via.placeholder.com/150" alt="">
+        <!-- TODO: Add meaningful alt text for the image -->
+        <!--informative image-->
+        <img src="ex1.jpg"alt="a group of student collaborating on a project in a classroom">
+        <!--decorative image-->
+        <img src="decorative1.jpg"alt="">
+        <!--Another informative image-->
+        <img src="ex2.jpg"alt="A close-up of a laptop screen showing code">
+    </div>
+</div>
+
+<div class="card">
+    <h2>Label + Input Example</h2>
+    <label for="username">Enter your name:</label>
+    <input type="text" id="username" placeholder="Type your name here">
+    <!-- TODO: Add more inputs like email or age with proper labels -->
+    
+    <form>
+    <label for="name">name:</label>
+    <input type="text" id="name" name="name" aria-required="true">
+
+    <label for="email">email:</label>
+    <input type="email" id="email" name="email">
+
+    <button type="submit">submit</button>
+    </form>
+</div>
+
+<div class="card">
+    <h2>Button with ARIA Label</h2>
+    <button aria-label="">Accessible Button</button>
+    <!-- TODO: Add a proper ARIA label describing button purpose -->
+    <button aria-label="open menu"></button>
+    <button aria-label="submit form">submit</button>
+</div>
+
+<div class="card">
+    <h2>Navigation Example</h2>
+    <nav>
+        <a href="#" tabindex="0">Home</a> |
+        <a href="#" tabindex="0">About</a> |
+        <a href="#" tabindex="0">Contact</a>
+        <style1>
+        a:focus{
+            outline"2px solid blue;
+            outline-offset:2px;
+        }
+        </style>
+    </nav>
+    <!-- TODO: Ensure focus outlines are visible and navigable via keyboard -->
+</div>
+<nav role="Navigation"aria-label="main navigation">
+<!--navigation content>
+</nav>
+
+<div role="alret" aria-label="important message">
+this is an alert message.
+</div>
+
+ <div class="card">
+    <h2>Heading Structure Example</h2>
+    <h3>Subsection 1</h3>
+    <p>Some content here...</p>
+    <h3>Subsection 2</h3>
+    <p>More content here...</p>
+    <!-- TODO: Ensure heading hierarchy is logical (h1 → h2 → h3) -->
+    <article>
+    <h1>main tittle</h2>
+    <h2>section tittle</h2>
+    <p>some content here.</p>
+    <h3>subsection tittle</h3>
+    <p1>more detailed content.</p>
+    </article>
+</div>
+
+</body>
+</html>
