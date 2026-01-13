@@ -2,61 +2,104 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>HTML Entities & Special Characters – Practice Playground</title>
+<title>Multimedia Practice – Improved Starter Code</title>
 
 <style>
     body {
         font-family: 'Poppins', sans-serif;
         background: linear-gradient(135deg, #1a1a2e, #16213e);
         color: white;
-        padding: 30px;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 850px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.1);
+        backdrop-filter: blur(4px);
+    }
+
+    h2 {
+        color: #E5608E;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        color: #ffd1dc;
     }
 
     .box {
-        background: rgba(255, 255, 255, 0.07);
+        background: rgba(255,255,255,0.07);
         padding: 20px;
         border-radius: 10px;
-        border: 1px solid rgba(255,255,255,0.2);
-        max-width: 850px;
-        margin: auto;
-        line-height: 1.6;
+        margin: 25px 0;
+        border: 1px solid rgba(255,255,255,0.1);
     }
 
-    h1 {
-        text-align: center;
-        color: #E5608E;
+    video, audio, img, iframe {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 12px;
     }
 
-    code {
-        background: rgba(255,255,255,0.15);
-        padding: 3px 6px;
-        border-radius: 5px;
-        color: #00FF88;
-        font-family: "Courier New", monospace;
+    .caption {
+        font-size: 0.9rem;
+        opacity: 0.8;
+        margin-top: 6px;
+    }
+
+    img {
+        border-radius: 10px;
     }
 </style>
 </head>
-
 <body>
 
-<h1>HTML Entities & Special Characters – Practice Playground</h1>
-I scored 95&percnt; in coding & I love learning ♥
-<h1>Welcome to Web Development</h1>
+<div class="container">
 
-<div class="box">
-    <h2 style="color:#E5608E;">&#128512</h2>
+    <h2>✨ Multimedia Playground ✨</h2>
 
-    <p>Less Than: &lt;</p>
-    <p>Greater Than: &gt;</p>
-    <p>Copyright: &copy;</p>
-    <p>Trademark: &trade;</p>
-    <p>Heart: &hearts;</p>
+    <!-- Video Section -->
+    <div class="box">
+        <h3>My First Working Video</h3>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <p class="caption">A sample working video using a free online source.</p
+        <p>A relaxing nature video.</p>
+        iframe width="420" height="250" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+>
+        <video controls>
+  <source src="travel-video.mp4" type="video/mp4">
+</video>
+    </div>
 
-    <p>degree symbol: &deg;</p>
-    <p>Euro symbol: &euro;</p>
-    <p>copyright symbol: &copy;</p>
-    <p>yen symbol: &yen;</p>
-    
+    <!-- Audio Section -->
+    <div class="box">
+        <h3>Relaxing Audio Track</h3>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3">
+        </audio>
+        <p class="caption">A working sample audio track for testing.</p>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="box">
+        <h3>Image Gallery</h3>
+
+        <img src="https://picsum.photos/600/300?random=1" alt="Random Image 1">
+        <p class="caption">A random aesthetic image.</p>
+        <video controls>
+  <source src="travel-video.mp4" type="video/mp4">
+  <p>A relaxing nature video.</p>
+</video>
+    </div>
 </div>
 
 </body>
