@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Click on the page to
+        trigger click event</h3>
+    <h3>Click on the page to
+        trigger mouseover event</h3>
+    <h3>Click on the page to
+        trigger mouseoutevent</h3>
+
+    <script type="text/javascript">
+        document.addEventListener("click",
+            function () {
+                alert("You clicked inside the document");
+            });
+        document.addEventListener("mouseover",
+            function () {
+                document.body.style.backgroundColor = "lavender";
+            });
+
+        document.addEventListener("mouseout",
+            function () {
+                document.body.style.backgroundColor = "white";
+            });
+    </script>
+</body>
+
+</html>
