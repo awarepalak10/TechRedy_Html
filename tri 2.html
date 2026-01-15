@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="clickFunction()">
+        Click Me
+    </button>
+    <br><br>
+
+    <div class="container" id="myDiv" 
+         onmouseenter="enterFunction()" 
+         onmouseleave="leaveFunction()">
+        Hello World...How are you
+    </div>
+
+    <script type="text/javascript">
+        function clickFunction() {
+            document.body.style
+                .backgroundColor = "pink";
+        }
+
+        function enterFunction() {
+            document.getElementById("myDiv")
+                .style.border = "1px solid black";
+        }
+
+        function leaveFunction() {
+            document.getElementById("myDiv")
+                .style.border = "2px solid blue";
+        }
+    </script>
+</body>
+
+</html>
